@@ -1,3 +1,10 @@
+# 🏀 NBA 2023 Playoff Player Performance Analysis  
+**Data Analytics • Machine Learning • Business Intelligence**
+
+Comprehensive player performance analysis using R and Power BI.  
+Applies EDA, PCA, and K-Means clustering to identify top performers and create interactive dashboards — mirroring real-world SAS-style analytics and consulting workflows.
+
+
 ## Table of Contents
 - [Project Overview](#nba-2023-playoff-player-performance-analysis)
 - [Scoring Trends & Efficiency](#-scoring-trends--efficiency)
