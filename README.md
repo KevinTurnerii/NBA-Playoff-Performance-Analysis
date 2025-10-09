@@ -125,7 +125,7 @@ Top performers included:
 
 ## 📊 Power BI Dashboard
 
-An interactive report was created to summarize playoff insights using **Power BI**, supporting filtering by team, position, and cluster role:
+An interactive Power BI dashboard summarizes playoff insights, enabling dynamic filtering by player, team, and role cluster for deeper storytelling and exploration:
 
 - Top Performers (Weighted Score)
 - Scoring Breakdown (2PT / 3PT / FT)
@@ -206,12 +206,18 @@ By combining tools like **R**, **Power BI**, and **SAS-aligned methodologies**, 
 - Role-based clustering through PCA and KMeans  
 - A stakeholder-ready dashboard for decision-making support
 
-This work reflects applied expertise gained through:
+---
+### 🎓 Education & Certifications
+- **B.S.** in Management Information Systems & Business Analytics  
+- **M.S.** in Data Analytics (in progress, AI & Machine Learning minor)  
+- **SAS Certifications:**  
+  - Statistics & Data Mining for Business Intelligence  
+  - Predictive Analytics Management  
+  - Enterprise Performance Management  
+  - Applied Data Analytics
 
-- 🎓 A **Bachelor’s in Management Information Systems & Business Analytics**  
-- 📘 A **Master’s in Data Analytics** (in progress, with a minor in **AI & Machine Learning**)  
-- 📜 **4 SAS Certifications** covering data mining, predictive analytics, business intelligence, performance management, and machine learning
+---
 
-This portfolio project serves as a real-world demonstration of how analytics and data storytelling can drive strategic decisions in both sports and business environments.
+This portfolio project showcases the application of statistical analysis, machine learning, and business intelligence to real-world sports data — bridging the gap between analytics theory and performance-driven decision-making.
 
 
