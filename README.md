@@ -21,6 +21,7 @@ Applies EDA, PCA, and K-Means clustering to identify top performers and create i
 - [Visual Gallery](#-visual-gallery)
 - [Conclusion](#-conclusion)
 
+Power BI is used as an executive synthesis layer, while detailed modeling and exploration are performed in R.
 ---
 
 # NBA 2023 Playoff Player Performance Analysis
@@ -142,7 +143,7 @@ An interactive Power BI dashboard summarizes playoff insights, enabling dynamic 
 
 📁 Files:
 - [`NBA_2023_Playoff_Analysis.pbix`](NBA_2023_Playoff_Analysis.pbix)
-- ![Dashboard Screenshot](DashBoard%20ScreenShot.png)
+- ![NBA Playoff Executive Dashboard](dashboard%20preview%20nba%20performance%20snapshot.png)
 
 ---
 
