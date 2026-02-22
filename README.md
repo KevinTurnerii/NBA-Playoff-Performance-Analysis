@@ -1,8 +1,17 @@
-# 🏀 NBA 2023 Playoff Player Performance Analysis  
-**Data Analytics • Machine Learning • Business Intelligence**
+# 🏀 NBA 2023 Playoff Player Performance Analytics  
+**Advanced Statistical Modeling • Unsupervised Learning • BI Reporting**
 
-Comprehensive player performance analysis using R and Power BI.  
-Applies EDA, PCA, and K-Means clustering to identify top performers and create interactive dashboards — mirroring real-world SAS-style analytics and consulting workflows.
+This project applies advanced statistical analysis and unsupervised machine learning to evaluate player performance during the 2023 NBA Playoffs.
+
+Using R for modeling and Power BI for executive synthesis, the analysis builds a multi-metric evaluation framework to:
+
+- Quantify scoring efficiency
+- Measure playmaking effectiveness
+- Evaluate defensive impact
+- Engineer composite performance rankings
+- Segment players into performance tiers using PCA and K-Means clustering
+
+The result is a modeling-driven evaluation system that mirrors real-world performance analytics used in professional sports operations and data consulting environments.
 
 
 ## Table of Contents
@@ -160,15 +169,15 @@ An interactive Power BI dashboard summarizes playoff insights, enabling dynamic 
 
 ## 💼 Skills Demonstrated
 
-- **Exploratory Data Analysis (EDA)**
-- **Descriptive & Predictive Modeling** (Weighted Score logic)
-- **PCA + KMeans Clustering**
-- **Feature Engineering** (2PT/3PT/FT, AST:TOV, etc.)
-- **BI Dashboard Development** (Power BI)
-- **SAS-aligned Methods** (scorecards, segmentation, performance KPIs)
-- **Data Mining & Segmentation Analysis**
-- **Business Intelligence Reporting**
-- **Tool Proficiency:** R, Power BI, `ggplot2`, SAS-style logic, clustering methods
+- Advanced Exploratory Data Analysis (EDA)
+- Multivariate Statistical Analysis
+- Feature Engineering & Metric Normalization
+- Composite Score Modeling
+- PCA Dimensionality Reduction
+- K-Means Clustering & Segmentation
+- Correlation & Performance Dependency Analysis
+- Interactive BI Dashboard Development (Power BI)
+- Cross-Tool Analytical Workflow (R → Power BI)
 
 ---
 
@@ -213,16 +222,6 @@ By combining tools like **R**, **Power BI**, and **SAS-aligned methodologies**, 
 - Objective player rankings using custom scoring metrics  
 - Role-based clustering through PCA and KMeans  
 - A stakeholder-ready dashboard for decision-making support
-
----
-### 🎓 Education & Certifications
-- **B.S.** in Management Information Systems & Business Analytics  
-- **M.S.** in Data Analytics (in progress, AI & Machine Learning minor)  
-- **SAS Certifications:**  
-  - Statistics & Data Mining for Business Intelligence  
-  - Predictive Analytics Management  
-  - Enterprise Performance Management  
-  - Applied Data Analytics
 
 ---
 
