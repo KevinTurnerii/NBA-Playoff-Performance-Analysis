@@ -151,8 +151,8 @@ An interactive Power BI dashboard summarizes playoff insights, enabling dynamic 
 - Defensive Efficiency (STL, BLK, PF)
 
 📁 Files:
-- [`NBA_2023_Playoff_Analysis.pbix(1)`](NBA_2023_Playoff_Analysis%20(1).pbix)
-- ![NBA Playoff Executive Dashboard](dashboard%20preview%20nba%20performance%20snapshot.png)
+- [`NBA_2023_Playoff_Analysis (1-).pbix`](NBA_2023_Playoff_Analysis%20(1-).pbix)
+- ![NBA 2023 Playoff Executive Dashboard](dashboard_preview_nba_2023.png)
 
 ---
 
