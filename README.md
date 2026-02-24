@@ -32,52 +32,52 @@ Power BI is used as an executive synthesis layer, while detailed modeling and ex
 
 ---
 
-## 🏀 Scoring Trends & Efficiency
+##  Scoring Trends & Efficiency
 - **Devin Booker** led with **33.7 PPG**, driven by elite 2PT shooting.
 - **Stephen Curry** averaged **30.5 PPG**, powered by 4.4 made 3s/game.
 - **Jokić** and **Durant** dominated with highly efficient, balanced scoring.
 
-> 🔍 **Insight:** Scoring efficiency came from maximizing different strengths — FT drawing (Durant), 3PT accuracy (Curry), and interior control (Jokić).
+>  **Insight:** Scoring efficiency came from maximizing different strengths — FT drawing (Durant), 3PT accuracy (Curry), and interior control (Jokić).
 
 ---
 
-## 🎯 Assist Efficiency & Playmaking
+##  Assist Efficiency & Playmaking
 - **Jokić**: 9.5 AST, 3.5 TOV — exceptional for a center.
 - **Booker** & **Harden**: High assists, low turnovers.
 
-> 🔍 **Insight:** Top playmakers not only passed well, but protected possessions.
+>  **Insight:** Top playmakers not only passed well, but protected possessions.
 
 ---
 
-## 🛡️ Defensive Standouts
+##  Defensive Standouts
 - **Steals:** Butler, Harden (1.8 STL); Booker (1.7).
 - **Blocks:** Davis (3.1), Embiid (2.8).
 - **Davis** was the only top-10 player in **both steals and blocks**.
 
-> 🔍 **Insight:** Defensive anchors showed versatility without excessive fouling.
+>  **Insight:** Defensive anchors showed versatility without excessive fouling.
 
 ---
 
-## 🏀 Rebounding Leaders
+##  Rebounding Leaders
 - **Davis**: 14.1 RPG (11.7 DRB)
 - **Jokić**: 13.5 RPG
 - **Looney** & **Robinson**: Offensive rebounding specialists
   
->🔍 Insight: Dominant rebounders like Davis and Jokić controlled the defensive glass, while specialists like Looney and Robinson created extra possessions through offensive rebounding.
+> Insight: Dominant rebounders like Davis and Jokić controlled the defensive glass, while specialists like Looney and Robinson created extra possessions through offensive rebounding.
 
 ---
 
-## 📈 Correlation Analysis
+##  Correlation Analysis
 - **PTS & AST**: 0.81  
 - **PTS & DRB**: 0.71  
 - **AST & STL**: 0.74  
 - **DRB & BLK**: 0.65  
 
-> 🔍 **Insight:** Great scorers were often great facilitators and rebounders, showing all-around impact.
+>  **Insight:** Great scorers were often great facilitators and rebounders, showing all-around impact.
 
 ---
 
-## 🏆 Weighted Score Rankings
+##  Weighted Score Rankings
 
 Composite Performance Score (Equal Weight Model)
 
@@ -93,11 +93,11 @@ Top performers included:
 4. **Jayson Tatum**
 5. **Anthony Davis**
 
-> 🔍 **Insight:** Weighted metrics reveal balanced contributors beyond box score leaders.
+>  **Insight:** Weighted metrics reveal balanced contributors beyond box score leaders.
 
 ---
 
-## 📋 Top 10 Overall Performers (Detailed Breakdown)
+##  Top 10 Overall Performers (Detailed Breakdown)
 
 | Rank | Player         | Key Stats |
 |------|----------------|-----------|
@@ -112,24 +112,24 @@ Top performers included:
 | 9️⃣ | Jamal Murray    | 26.1 PPG, 7.1 AST |
 | 🔟 | Jalen Brunson   | 27.8 PPG, 5.6 AST |
 
-> 🔍 **Insight:** The top 10 performers were not just high scorers — most contributed across multiple categories, reinforcing the value of all-around impact over isolated stats.
+>  **Insight:** The top 10 performers were not just high scorers — most contributed across multiple categories, reinforcing the value of all-around impact over isolated stats.
 
 ---
 
-## 🧩 PCA & Clustering (Unsupervised Learning)
+##  PCA & Clustering (Unsupervised Learning)
 
 Principal Component Analysis (PCA) was applied to reduce dimensionality across 9 performance metrics, retaining 63% of total variance in the first two components.
 
 KMeans clustering (K=3, elbow method validated) segmented players into distinct performance tiers:
-  - 🟣 Superstars  
-  - 🔴 Starters  
-  - 🔵 Role Players
+  -  Superstars  
+  -  Starters  
+  -  Role Players
 
-> 🔍 **Insight:** Data-driven clustering aligns with perceived roles and highlights undervalued contributors.
+>  **Insight:** Data-driven clustering aligns with perceived roles and highlights undervalued contributors.
 
 ---
 
-## 📊 Power BI Dashboard
+##  Power BI Dashboard
 
 An interactive Power BI dashboard provides executive-level synthesis of model outputs, enabling dynamic filtering by player, team, and cluster assignment.
 
@@ -139,13 +139,13 @@ An interactive Power BI dashboard provides executive-level synthesis of model ou
 - Offensive & Defensive Rebounding
 - Defensive Efficiency (STL, BLK, PF)
 
-📁 Files:
+ Files:
 - [`NBA_2023_Playoff_Analysis (1-).pbix`](NBA_2023_Playoff_Analysis%20(1-).pbix)
 - ![NBA 2023 Playoff Executive Dashboard](dashboard_preview_nba_2023.png)
 
 ---
 
-## 🧰 Tools & Technologies Used
+##  Tools & Technologies Used
 - **R / RStudio** – Data wrangling, modeling, and clustering
 - **Power BI** – Interactive dashboard and stakeholder visuals
 - **ggplot2**, **ggcorrplot**, **factoextra** – Correlation, PCA, and cluster visualization
@@ -156,7 +156,7 @@ An interactive Power BI dashboard provides executive-level synthesis of model ou
 
 ---
 
-## 💼 Skills Demonstrated
+##  Skills Demonstrated
 
 - Advanced Exploratory Data Analysis (EDA)
 - Multivariate Statistical Analysis
@@ -170,7 +170,7 @@ An interactive Power BI dashboard provides executive-level synthesis of model ou
 
 ---
 
-## 📸 Visual Gallery
+##  Visual Gallery
 
 #### 🔹 Correlation Heatmap
 ![Correlation Heatmap](visuals_nba_2023_playoffs/correlation_heatmap.png)
