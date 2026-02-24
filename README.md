@@ -1,50 +1,34 @@
-# 🏀 NBA 2023 Playoff Player Performance Analytics  
-**Advanced Statistical Modeling • Unsupervised Learning • BI Reporting**
+# NBA 2023 Playoff Player Performance Modeling Framework  
+Multivariate Statistical Analysis • Composite Scoring • Unsupervised Learning
 
-This project applies advanced statistical analysis and unsupervised machine learning to evaluate player performance during the 2023 NBA Playoffs.
+This project builds a structured performance evaluation framework for the 2023 NBA Playoffs using multivariate statistical modeling in R and executive reporting in Power BI.
 
-Using R for modeling and Power BI for executive synthesis, the analysis builds a multi-metric evaluation framework to:
+The objective is to move beyond isolated box score metrics and engineer a normalized, composite evaluation system capable of:
 
-- Quantify scoring efficiency
-- Measure playmaking effectiveness
-- Evaluate defensive impact
-- Engineer composite performance rankings
-- Segment players into performance tiers using PCA and K-Means clustering
+- Quantifying scoring efficiency  
+- Measuring playmaking effectiveness  
+- Evaluating defensive contribution  
+- Ranking players using weighted multi-metric scoring  
+- Segmenting players using PCA and KMeans clustering  
 
-The result is a modeling-driven evaluation system that mirrors real-world performance analytics used in professional sports operations and data consulting environments.
-
+The result is a modeling-driven performance segmentation system demonstrating applied statistical analysis, feature engineering, and unsupervised learning.
 
 ## Table of Contents
-- [Project Overview](#nba-2023-playoff-player-performance-analysis)
 - [Scoring Trends & Efficiency](#-scoring-trends--efficiency)
-- [Assist Efficiency](#-assist-efficiency--playmaking)
+- [Assist Efficiency & Playmaking](#-assist-efficiency--playmaking)
 - [Defensive Standouts](#️-defensive-standouts)
 - [Rebounding Leaders](#-rebounding-leaders)
 - [Correlation Analysis](#-correlation-analysis)
-- [Weighted Rankings](#-weighted-score-rankings)
-- [Top 10 Players](#-top-10-overall-performers-detailed-breakdown)
+- [Weighted Score Rankings](#-weighted-score-rankings)
+- [Top 10 Overall Performers](#-top-10-overall-performers-detailed-breakdown)
 - [PCA & Clustering](#-pca--clustering-unsupervised-learning)
 - [Power BI Dashboard](#-power-bi-dashboard)
-- [Tools Used](#-tools--technologies-used)
+- [Tools & Technologies Used](#-tools--technologies-used)
 - [Skills Demonstrated](#-skills-demonstrated)
 - [Visual Gallery](#-visual-gallery)
-- [Conclusion](#-conclusion)
+- [Conclusion](#conclusion)
 
 Power BI is used as an executive synthesis layer, while detailed modeling and exploration are performed in R.
----
-
-# NBA 2023 Playoff Player Performance Analysis
-
-This project presents a comprehensive performance analysis of NBA players during the **2023 Playoffs**, combining statistical modeling in **RStudio** with interactive reporting via **Power BI**. It applies key techniques from **data analytics, machine learning, and business intelligence**, aligning with SAS-based methodologies for real-world impact.
-
-Players were segmented and ranked using:
-- **Exploratory Data Analysis (EDA)**
-- **Custom Weighted Scoring Models**
-- **Correlation & Statistical Analysis**
-- **PCA + KMeans Clustering**
-- **Interactive KPI Dashboards**
-
-The result is a dual-layered insight experience that simulates what a data analyst or BI consultant might deliver to an NBA front office, marketing team, or performance staff.
 
 ---
 
@@ -95,8 +79,12 @@ The result is a dual-layered insight experience that simulates what a data analy
 
 ## 🏆 Weighted Score Rankings
 
-Composite Score (20% each):  
-**PTS + AST + STL + BLK + TRB**
+Composite Performance Score (Equal Weight Model)
+
+Standardized metrics:
+PTS, AST, STL, BLK, TRB
+
+Each metric normalized and weighted equally (20%) to produce an aggregate performance index.
 
 Top performers included:
 1. **Nikola Jokić**
@@ -130,8 +118,9 @@ Top performers included:
 
 ## 🧩 PCA & Clustering (Unsupervised Learning)
 
-- **PCA** reduced 9 features into 2D space (63% variance retained)
-- **KMeans (K=3)** clustered players into:
+Principal Component Analysis (PCA) was applied to reduce dimensionality across 9 performance metrics, retaining 63% of total variance in the first two components.
+
+KMeans clustering (K=3, elbow method validated) segmented players into distinct performance tiers:
   - 🟣 Superstars  
   - 🔴 Starters  
   - 🔵 Role Players
@@ -142,7 +131,7 @@ Top performers included:
 
 ## 📊 Power BI Dashboard
 
-An interactive Power BI dashboard summarizes playoff insights, enabling dynamic filtering by player, team, and role cluster for deeper storytelling and exploration:
+An interactive Power BI dashboard provides executive-level synthesis of model outputs, enabling dynamic filtering by player, team, and cluster assignment.
 
 - Top Performers (Weighted Score)
 - Scoring Breakdown (2PT / 3PT / FT)
@@ -212,19 +201,15 @@ An interactive Power BI dashboard summarizes playoff insights, enabling dynamic 
 
 ---
 
-## 📌 Conclusion
+## Conclusion
 
-This project demonstrates the integration of advanced data analytics, machine learning techniques, and business intelligence reporting to produce a polished, real-world deliverable focused on NBA player performance.
+This project demonstrates applied multivariate analysis, composite metric engineering, dimensionality reduction, and unsupervised clustering within a structured analytical workflow.
 
-By combining tools like **R**, **Power BI**, and **SAS-aligned methodologies**, the analysis delivers:
+By integrating R-based modeling with Power BI executive reporting, the framework delivers:
 
-- Statistically grounded insights  
-- Objective player rankings using custom scoring metrics  
-- Role-based clustering through PCA and KMeans  
-- A stakeholder-ready dashboard for decision-making support
+- Statistically grounded player rankings  
+- Multi-dimensional performance segmentation  
+- Reproducible composite scoring methodology  
+- Cross-platform analytical integration  
 
----
-
-This portfolio project showcases the application of statistical analysis, machine learning, and business intelligence to real-world sports data — bridging the gap between analytics theory and performance-driven decision-making.
-
-
+The project reflects advanced analytical capability aligned with data analytics, machine learning, and business intelligence disciplines.
