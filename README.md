@@ -1,70 +1,47 @@
 # NBA 2023 Playoff Player Performance Modeling Framework  
-Multivariate Statistical Analysis • Composite Scoring • Unsupervised Learning
+Multivariate Statistical Analysis • Composite Metric Engineering • Unsupervised Learning
 
-This project builds a structured performance evaluation framework for the 2023 NBA Playoffs using multivariate statistical modeling in R and executive reporting in Power BI.
+This project develops a multi-metric performance modeling framework using standardized feature engineering and unsupervised learning to evaluate high-dimensional player performance data from the 2023 NBA Playoffs.
 
-The objective is to move beyond isolated box score metrics and engineer a normalized, composite evaluation system capable of:
+Rather than relying on isolated box score statistics, the framework engineers normalized performance metrics and aggregates them into a composite index capable of:
 
-- Quantifying scoring efficiency  
-- Measuring playmaking effectiveness  
-- Evaluating defensive contribution  
-- Ranking players using weighted multi-metric scoring  
-- Segmenting players using PCA and KMeans clustering  
+- Quantifying scoring efficiency across usage profiles  
+- Measuring playmaking effectiveness relative to turnovers  
+- Evaluating defensive contribution across multiple dimensions  
+- Ranking players using weighted, standardized multi-metric scoring  
+- Segmenting players into performance tiers using PCA and KMeans clustering  
 
-The result is a modeling-driven performance segmentation system demonstrating applied statistical analysis, feature engineering, and unsupervised learning.
+R is used for statistical modeling and dimensionality reduction, while Power BI serves as an executive reporting layer for interactive synthesis of model outputs.
+
+The result is a structured analytical system demonstrating feature engineering, multivariate modeling, dimensionality reduction, and reproducible segmentation logic.
 
 ## Table of Contents
-- [Scoring Trends & Efficiency](#-scoring-trends--efficiency)
-- [Assist Efficiency & Playmaking](#-assist-efficiency--playmaking)
-- [Defensive Standouts](#️-defensive-standouts)
-- [Rebounding Leaders](#-rebounding-leaders)
-- [Correlation Analysis](#-correlation-analysis)
-- [Weighted Score Rankings](#-weighted-score-rankings)
-- [Top 10 Overall Performers](#-top-10-overall-performers-detailed-breakdown)
-- [PCA & Clustering](#-pca--clustering-unsupervised-learning)
-- [Power BI Dashboard](#-power-bi-dashboard)
-- [Tools & Technologies Used](#-tools--technologies-used)
-- [Skills Demonstrated](#-skills-demonstrated)
-- [Visual Gallery](#-visual-gallery)
+- [Exploratory Feature Analysis](#exploratory-feature-analysis)
+- [Correlation Analysis](#correlation-analysis)
+- [Core Modeling Framework](#core-modeling-framework--composite-performance-index)
+- [Dimensionality Reduction & Segmentation](#dimensionality-reduction--unsupervised-segmentation)
+- [Power BI Dashboard](#power-bi-dashboard)
+- [Tools & Technologies Used](#tools--technologies-used)
+- [Skills Demonstrated](#skills-demonstrated)
+- [Visual Gallery](#visual-gallery)
 - [Conclusion](#conclusion)
-
+  
 Power BI is used as an executive synthesis layer, while detailed modeling and exploration are performed in R.
 
 ---
 
-##  Scoring Trends & Efficiency
-- **Devin Booker** led with **33.7 PPG**, driven by elite 2PT shooting.
-- **Stephen Curry** averaged **30.5 PPG**, powered by 4.4 made 3s/game.
-- **Jokić** and **Durant** dominated with highly efficient, balanced scoring.
+## Exploratory Feature Analysis
 
->  **Insight:** Scoring efficiency came from maximizing different strengths — FT drawing (Durant), 3PT accuracy (Curry), and interior control (Jokić).
+Initial exploratory analysis evaluated core performance dimensions across scoring, playmaking, defense, and rebounding.
 
----
+Key observations:
 
-##  Assist Efficiency & Playmaking
-- **Jokić**: 9.5 AST, 3.5 TOV — exceptional for a center.
-- **Booker** & **Harden**: High assists, low turnovers.
+- High-volume scorers often demonstrated strong assist correlation, reinforcing multi-dimensional offensive impact.
+- Elite rebounders (e.g., Davis, Jokić) controlled defensive possessions while maintaining scoring efficiency.
+- Defensive contributors showed measurable versatility through combined steal and block metrics.
+- Assist-to-turnover efficiency differentiated high-usage creators from volume passers.
 
->  **Insight:** Top playmakers not only passed well, but protected possessions.
-
----
-
-##  Defensive Standouts
-- **Steals:** Butler, Harden (1.8 STL); Booker (1.7).
-- **Blocks:** Davis (3.1), Embiid (2.8).
-- **Davis** was the only top-10 player in **both steals and blocks**.
-
->  **Insight:** Defensive anchors showed versatility without excessive fouling.
-
----
-
-##  Rebounding Leaders
-- **Davis**: 14.1 RPG (11.7 DRB)
-- **Jokić**: 13.5 RPG
-- **Looney** & **Robinson**: Offensive rebounding specialists
-  
-> Insight: Dominant rebounders like Davis and Jokić controlled the defensive glass, while specialists like Looney and Robinson created extra possessions through offensive rebounding.
-
+These findings informed the selection of standardized metrics used in composite scoring and clustering.
 ---
 
 ##  Correlation Analysis
@@ -73,28 +50,38 @@ Power BI is used as an executive synthesis layer, while detailed modeling and ex
 - **AST & STL**: 0.74  
 - **DRB & BLK**: 0.65  
 
->  **Insight:** Great scorers were often great facilitators and rebounders, showing all-around impact.
+> **Insight:** Strong positive correlations between scoring, assists, and rebounding indicate that high-impact players contributed across multiple dimensions rather than specializing in isolated metrics.
 
 ---
 
-##  Weighted Score Rankings
+## Core Modeling Framework — Composite Performance Index
 
-Composite Performance Score (Equal Weight Model)
+To quantify overall player impact, a standardized composite performance index was engineered using equal-weight normalization across five primary metrics:
 
-Standardized metrics:
-PTS, AST, STL, BLK, TRB
+- Points (PTS)  
+- Assists (AST)  
+- Total Rebounds (TRB)  
+- Steals (STL)  
+- Blocks (BLK)  
 
-Each metric normalized and weighted equally (20%) to produce an aggregate performance index.
+Each metric was z-score normalized to eliminate scale distortion and weighted equally (20%) to construct an aggregate performance score.
 
-Top performers included:
-1. **Nikola Jokić**
-2. **Devin Booker**
-3. **Kevin Durant**
-4. **Jayson Tatum**
-5. **Anthony Davis**
+This composite framework enables:
 
->  **Insight:** Weighted metrics reveal balanced contributors beyond box score leaders.
+- Cross-position comparison  
+- Balanced multi-dimensional ranking  
+- Removal of single-metric bias  
+- Transparent and reproducible scoring methodology  
 
+Top-ranked performers under this framework included:
+
+1. Nikola Jokić  
+2. Devin Booker  
+3. Kevin Durant  
+4. Jayson Tatum  
+5. Anthony Davis  
+
+The composite index highlights players with balanced multi-category contributions rather than isolated statistical dominance.
 ---
 
 ##  Top 10 Overall Performers (Detailed Breakdown)
@@ -116,17 +103,19 @@ Top performers included:
 
 ---
 
-##  PCA & Clustering (Unsupervised Learning)
+## Dimensionality Reduction & Unsupervised Segmentation
 
-Principal Component Analysis (PCA) was applied to reduce dimensionality across 9 performance metrics, retaining 63% of total variance in the first two components.
+Principal Component Analysis (PCA) was applied across nine standardized performance metrics to reduce dimensional complexity while preserving variance structure.  
 
-KMeans clustering (K=3, elbow method validated) segmented players into distinct performance tiers:
-  -  Superstars  
-  -  Starters  
-  -  Role Players
+The first two principal components retained 63% of total variance, enabling interpretable two-dimensional visualization of player performance space.
 
->  **Insight:** Data-driven clustering aligns with perceived roles and highlights undervalued contributors.
+KMeans clustering (K=3, validated using the elbow method) segmented players into three statistically distinct performance tiers:
 
+- Superstars  
+- Core Starters  
+- Role Players  
+
+This unsupervised framework demonstrates the ability to derive interpretable player archetypes without manual labeling, reinforcing reproducible, data-driven segmentation logic.
 ---
 
 ##  Power BI Dashboard
@@ -203,13 +192,14 @@ An interactive Power BI dashboard provides executive-level synthesis of model ou
 
 ## Conclusion
 
-This project demonstrates applied multivariate analysis, composite metric engineering, dimensionality reduction, and unsupervised clustering within a structured analytical workflow.
+This project demonstrates the ability to engineer composite metrics, normalize multi-dimensional performance data, and apply unsupervised learning techniques to derive interpretable performance segments.
 
-By integrating R-based modeling with Power BI executive reporting, the framework delivers:
+By integrating R-based statistical modeling with Power BI executive reporting, the framework delivers:
 
-- Statistically grounded player rankings  
-- Multi-dimensional performance segmentation  
-- Reproducible composite scoring methodology  
+- Reproducible composite performance scoring  
+- Multi-dimensional player evaluation  
+- PCA-based dimensional reduction  
+- Data-driven clustering of performance tiers  
 - Cross-platform analytical integration  
 
-The project reflects advanced analytical capability aligned with data analytics, machine learning, and business intelligence disciplines.
+The modeling approach reflects applied multivariate analysis aligned with data analytics, statistical modeling, and machine learning workflows.
